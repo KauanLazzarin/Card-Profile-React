@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/reset.css';
+import './css/others.css';
+import Container from './components/Container';
+import Card from './components/Card';
+import CardTop from './components/CardTop';
+import Title from './components/Title';
+import ProfileName from './components/ProfileName';
+import ProfileNumbers from './components/ProfileNumbers';
+import NumbersContainer from './components/NumbersContainer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <Container>
+      <Title>P R O F I L E  <br/>  C A R D</Title>
+      <Card>
+        <CardTop>
+          <img 
+            id="profile-image" 
+            src="https://avatars.githubusercontent.com/u/64696298?s=460&u=62ac0201356fdab3ae5d61565dc7f6c15d57b488&v=4" 
+            alt="profile"
+          />
+        </CardTop>
 
-export default App;
+        <ProfileName>Kauan Lazzarin</ProfileName>
+
+        <NumbersContainer>
+          <ProfileNumbers>20 <br/> Repositories</ProfileNumbers>
+          <ProfileNumbers>26 <br/> Stars</ProfileNumbers>
+          <ProfileNumbers>16 <br/> Followers</ProfileNumbers>
+        </NumbersContainer>
+      </Card>
+    </Container>
+  );
+};

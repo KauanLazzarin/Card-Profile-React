@@ -1,0 +1,7 @@
+#profile-image {
+    width: 10vw;
+    margin-top: 10vh;
+    /* border: 2px solid rgb(88, 88, 88); */
+    box-shadow: 1px 1px 20px 1px black;
+    border-radius: 100%;
+}
